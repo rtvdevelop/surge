@@ -1,0 +1,68 @@
+main {
+  margin-top: 65px;
+}
+
+.navbar {
+  background: white;
+}
+
+.imdb.carousel {
+  background: url("../assets/jersey_tile_bw.jpg"), url("../assets/krish_tile_bw.jpg");
+  background-size: contain;
+  background-position: left, right;
+  background-repeat: no-repeat; /* this applies to both images */
+}
+
+.imdb .carousel-inner {
+  width: 65%;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.imdb .carousel-caption {
+  background: #e8b0695c;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: initial;
+  padding: 20px;
+}
+
+.imdb .carousel-item {
+  background-size: cover;
+  height: 400px;
+}
+
+.imdb .tile img {
+  width: 250px;
+}
+.flex {
+  display: flex !important;
+}
+
+.flex.h-align-space-between {
+  justify-content: space-between;
+}
+
+.slide-1 {
+  background: url("../assets/bahubali_banner.jpg");
+}
+.slide-2 {
+  background: url("../assets/syeraa_banner.jpg");
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+  .imdb .carousel-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 992px) {
+}
