@@ -23,11 +23,11 @@ main {
 
 .imdb.carousel {
   background-image: linear-gradient(to bottom, rgba(23, 23, 15, 0.52), rgba(48, 38, 22, 0.73)),
-    url(../assets/jersey_tile_bw.jpg), url(../assets/syeraa_tile_bw.jpg), url(../assets/jersey_tile_bw.jpg),
-    url(../assets/syeraa_tile_bw.jpg), url(../assets/jersey_tile_bw.jpg), url(../assets/syeraa_tile_bw.jpg);
+    url(../assets/mv1_tile_bw.jpg), url(../assets/mv2_tile_bw.jpg), url(../assets/mv3_tile_bw.jpg),
+    url(../assets/mv1_tile_bw.jpg), url(../assets/mv2_tile_bw.jpg), url(../assets/mv3_tile_bw.jpg);
   background-size: contain;
   background-position: 0px 0px, 275px 0px, 560px 0px, 845px 0px, 1130px 0px, 1416px 0px;
-  background-repeat: no-repeat; /* this applies to both images */
+  background-repeat: no-repeat;
   border-bottom: 2px solid #f7ab06;
 }
 
@@ -99,7 +99,7 @@ main {
 }
 .imdb .carousel-caption .controls .btn {
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 10px;
 }
 .imdb .carousel-caption .controls .dropdown-toggle-split {
   margin-left: 1px;
@@ -110,11 +110,14 @@ main {
     max-width: 300px;
   }
 }
+@media (max-width: 991px) {
+  .imdb-wrapper .search-bar {
+    max-width: none;
+  }
+}
 
 @media (max-width: 768px) {
   .imdb-wrapper .search-bar {
-    max-width: 300px;
-    margin-left: 20px;
   }
   .imdb .carousel-inner {
     width: 100%;

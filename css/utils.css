@@ -14,8 +14,12 @@
   justify-content: space-around;
 }
 
-.w-100 {
-  width: 100px;
+.bord-0 {
+  border: 0;
+}
+
+.transit-with-ease {
+  transition: all 1s ease;
 }
 
 /* colors */
