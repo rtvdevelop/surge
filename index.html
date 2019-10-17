@@ -9,10 +9,12 @@
         content="IMDb ratings movie reviews critics rating hollywood bollywood tollywood international">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="imdb-wrapper">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="90"></a>
@@ -22,31 +24,63 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">MOVIES <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" title="Movies" href="#">MOVIES <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">TV SERIES</a>
+                        <a class="nav-link" title="TV Series" href="#">TV SERIES</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">NEWS</a>
+                        <a class="nav-link" title="News" href="#">NEWS</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">PHOTOS</a>
+                        <a class="nav-link" title="Photos" href="#">PHOTOS</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">EVENTS</a>
+                        <a class="nav-link" title="Events" href="#">EVENTS</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">TRAILERS</a>
+                        <a class="nav-link" title="Trailers" href="#">TRAILERS</a>
                     </li>
 
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
+                <div class="input-group search-bar mr-auto">
+                    <input type="text" class="form-control  bg-light-grey" placeholder=""
+                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <div class="input-group-append bg-light-grey">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Page 1</a>
+                            <a class="dropdown-item" href="#">Page 2</a>
+                            <a class="dropdown-item" href="#">Entire site</a>
+                        </div>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary bg-mild-grey" type="button" id="button-addon1"><i
+                                class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-mild-grey" href="#"><span><i class="fa fa-user"
+                                    aria-hidden="true"></i></span>
+                            <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-mild-grey" href="#"><span><i class="fa fa-user"
+                                    aria-hidden="true"></i></span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-mild-grey" href="#"><span><i class="fa fa-user"
+                                    aria-hidden="true"></i></span></a>
+                    </li>
+
+
+                </ul>
             </div>
         </nav>
     </header>
@@ -55,22 +89,111 @@
             <div id="carouselExampleCaptions" class="imdb carousel row" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active slide-1">
-                        <!-- <img src="./assets/bahubali_banner.jpg" class="d-block w-100" alt="..."> -->
                         <div class="carousel-caption d-none d-md-block flex h-align-space-between">
                             <div class="desc">
-                                <h5>BAAHUBALI - THE CONCLUSION</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h5 class="title mt-4 mb-0">
+                                    BAAHUBALI - THE CONCLUSION
+                                    <span class="year text-yellow">( 2014 )</span>
+                                </h5>
+                                <section class="info">
+                                    some meta data
+                                </section>
+                                <section class="rating-visuals flex h-align-space-between mt-4">
+                                    <div class="pie flex-g-1">
+                                        chart
+                                    </div>
+                                    <div class="meta flex-g-1">
+                                        <div class="user-rating">
+                                            give rating
+                                        </div>
+                                        <div class="ratings">
+                                            given ratings
+                                        </div>
+                                        <div class="reviews">
+                                            given reviews
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="summary mt-4">
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </section>
+                                <section class="movie-info mt-4">
+                                    <span class="director">Director</span>
+                                    <span class="writers">Writer</span>
+                                    <span class="stars">Star</span>
+                                </section>
+                                <section class="controls mt-4">
+
+                                    <div class="btn-group">
+                                        <button class="bg-yellow btn">
+                                            <i class="fa fa-plus pr-2" aria-hidden="true"></i>
+                                            Watch List
+                                        </button>
+                                        <button type="button"
+                                            class="btn dropdown-toggle dropdown-toggle-split bg-yellow"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-default bg-white">
+                                        <i class="fa fa-play pr-2" aria-hidden="true"></i>
+                                        Watch trailer</button>
+                                </section>
                             </div>
                             <div class="tile">
-                                <img src="./assets/bahubali_tile.jpg" alt="">
+                                <img src="./assets/slide1_tile.jpg" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item slide-2">
-                        <!-- <img src="./assets/syeraa_banner.jpg" class="d-block w-100" alt="..."> -->
                         <div class="carousel-caption d-none d-md-block flex h-align-space-between">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="desc">
+                                <h5 class="title">
+                                    BAAHUBALI - THE CONCLUSION
+                                    <span class="m-release-year">2014</span>
+                                </h5>
+                                <section class="info">
+                                    some meta data
+                                </section>
+                                <section class="rating-visuals">
+                                    <div class="pie flex-g-1">
+                                        chart
+                                    </div>
+                                    <div class="meta flex-g-1">
+                                        <div class="user-rating">
+                                            give rating
+                                        </div>
+                                        <div class="ratings">
+                                            given ratings
+                                        </div>
+                                        <div class="reviews">
+                                            given reviews
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="summary">
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </section>
+                                <section class="movie-info">
+                                    <span class="director">Director</span>
+                                    <span class="writers">Writer</span>
+                                    <span class="stars">Star</span>
+                                </section>
+                                <section class="controls">
+                                    <button>+ Watch List</button>
+                                    <button>Watch trailer</button>
+                                </section>
+                            </div>
+                            <div class="tile">
+                                <img src="./assets/slide2_tile.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item slide-3">

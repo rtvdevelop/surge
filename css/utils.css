@@ -1,0 +1,46 @@
+.flex {
+  display: flex !important;
+}
+
+.flex-g-1 {
+  flex-grow: 1;
+}
+
+.flex.h-align-space-between {
+  justify-content: space-between;
+}
+
+.flex.h-align-space-around {
+  justify-content: space-around;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+/* colors */
+.bg-yellow {
+  background-color: #f7ab06;
+  color: black;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.bg-light-grey {
+  background-color: #ece9e3;
+}
+
+.bg-mild-grey {
+  background-color: #9e9387;
+}
+
+.text-yellow {
+  color: #f7ab06;
+}
+
+.text-mild-grey {
+  color: #9e9387 !important;
+}

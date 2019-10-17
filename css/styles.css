@@ -2,8 +2,23 @@ main {
   margin-top: 65px;
 }
 
-.navbar {
+.imdb-wrapper .navbar {
   background: white;
+}
+
+.imdb-wrapper .search-bar {
+  max-width: 400px;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.imdb-wrapper .navbar-collapse {
+  font-size: 14px;
+}
+
+.imdb-wrapper button,
+.imdb-wrapper input {
+  font-size: inherit;
 }
 
 .imdb.carousel {
@@ -13,6 +28,7 @@ main {
   background-size: contain;
   background-position: 0px 0px, 275px 0px, 560px 0px, 845px 0px, 1130px 0px, 1416px 0px;
   background-repeat: no-repeat; /* this applies to both images */
+  border-bottom: 2px solid #f7ab06;
 }
 
 .imdb .carousel-inner {
@@ -39,12 +55,13 @@ main {
 .imdb .tile img {
   width: 250px;
 }
-.flex {
-  display: flex !important;
+
+.imdb .carousel-control-prev {
+  left: 8%;
 }
 
-.flex.h-align-space-between {
-  justify-content: space-between;
+.imdb .carousel-control-next {
+  right: 8%;
 }
 
 .slide-1 {
@@ -58,12 +75,56 @@ main {
   background: linear-gradient(to bottom, rgba(60, 60, 60, 0.52), rgb(37, 38, 37)), url("../assets/slide3_banner.jpg");
 }
 
+.imdb .carousel-caption .tile {
+  overflow: hidden;
+}
+
+.imdb .carousel-caption .title {
+}
+
+.imdb .carousel-caption .year {
+}
+
+.imdb .carousel-caption .info {
+}
+
+.imdb .carousel-caption .rating-visuals {
+}
+
+.imdb .carousel-caption .pie {
+}
+.imdb .carousel-caption .meta {
+}
+.imdb .carousel-caption .summary {
+}
+.imdb .carousel-caption .controls .btn {
+  text-transform: uppercase;
+  font-size: 8px;
+}
+.imdb .carousel-caption .controls .dropdown-toggle-split {
+  margin-left: 1px;
+}
+
 @media (max-width: 1200px) {
+  .imdb-wrapper .search-bar {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
+  .imdb-wrapper .search-bar {
+    max-width: 300px;
+    margin-left: 20px;
+  }
   .imdb .carousel-inner {
     width: 100%;
+  }
+  .imdb .carousel-control-prev {
+    left: 0;
+  }
+
+  .imdb .carousel-control-next {
+    right: 0;
   }
 }
 
