@@ -47,7 +47,7 @@
 
                 </ul>
 
-                <div class="input-group search-bar mr-auto">
+                <div class="input-group search-bar mr-auto transit-with-ease">
                     <input type="text" class="form-control  bg-light-grey" placeholder=""
                         aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <div class="input-group-append bg-light-grey">
@@ -101,11 +101,19 @@
                                 </section>
                                 <section class="rating-visuals flex h-align-space-between mt-4">
                                     <div class="pie flex-g-1">
-                                        chart
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                        </svg>
+                                        <span class="rating-value">8</span>
                                     </div>
                                     <div class="meta flex-g-1">
                                         <div class="user-rating">
-                                            give rating
+                                            <div class="rating-wrapper"></div>
+                                            <span class="rating-recorded">
+                                                <span id="rated-value"></span> / <span id="max-value"></span>
+                                            </span>
                                         </div>
                                         <div class="ratings">
                                             given ratings
@@ -169,7 +177,10 @@
                                     </div>
                                     <div class="meta flex-g-1">
                                         <div class="user-rating">
-                                            give rating
+                                            <div class="rating-wrapper"></div>
+                                            <span class="rating-recorded">
+                                                <span id="rated-value"></span> / <span id="max-value"></span>
+                                            </span>
                                         </div>
                                         <div class="ratings">
                                             given ratings

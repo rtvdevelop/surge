@@ -9,7 +9,6 @@ main {
 .imdb-wrapper .search-bar {
   max-width: 400px;
   width: 100%;
-  transition: all 1s ease;
 }
 
 .imdb-wrapper .navbar-collapse {
@@ -28,13 +27,14 @@ main {
   background-size: contain;
   background-position: 0px 0px, 275px 0px, 560px 0px, 845px 0px, 1130px 0px, 1416px 0px;
   background-repeat: no-repeat;
-  border-bottom: 2px solid #f7ab06;
+  border-bottom: 4px solid #f7ab06;
 }
 
 .imdb .carousel-inner {
   width: 65%;
   margin: 0 auto;
   height: 400px;
+  overflow: initial;
 }
 
 .imdb .carousel-caption {
@@ -66,7 +66,7 @@ main {
 
 .slide-1 {
   background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.52), rgb(37, 38, 37)),
-    url(../assets/slide1_banner.jpg);
+    url("../assets/slide1_banner.jpg");
 }
 .slide-2 {
   background: linear-gradient(to bottom, rgba(60, 60, 60, 0.52), rgb(37, 38, 37)), url("../assets/slide2_banner.jpg");
@@ -89,6 +89,14 @@ main {
 }
 
 .imdb .carousel-caption .rating-visuals {
+}
+
+.imdb .carousel-caption .rating-wrapper {
+  display: inline-block;
+}
+
+.imdb .carousel-caption .fa.fa-star {
+  padding: 3px;
 }
 
 .imdb .carousel-caption .pie {
