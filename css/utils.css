@@ -52,8 +52,14 @@
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 80%;
+  width: 80px;
   max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: grey;
+  stroke-width: 3.8;
 }
 
 .circle {
@@ -62,6 +68,19 @@
   stroke-width: 2.8;
   stroke-linecap: round;
   animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.fa.fa-star {
 }
 
 .checked {

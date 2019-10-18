@@ -99,7 +99,18 @@ main {
   padding: 3px;
 }
 
+.imdb .carousel-caption #rated-value {
+  width: 15px;
+  display: inline-block;
+}
+
 .imdb .carousel-caption .pie {
+  width: 100px;
+}
+.imdb .pie .percentage {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #f7ab06;
 }
 .imdb .carousel-caption .meta {
 }
