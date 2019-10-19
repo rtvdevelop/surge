@@ -133,17 +133,25 @@ main {
 }
 
 .imdb-wrapper .movies-wrapper {
-  width: 80%;
+  width: 65%;
   margin: 10px auto;
 }
 
 .imdb-wrapper .movies-wrapper .card {
   height: 300px;
-  width: 220px;
+  width: 190px;
 }
 
 .imdb-wrapper .card img {
   width: 100%;
+}
+
+.imdb-wrapper .card .movie-title {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.imdb-wrapper .card .price {
+  font-size: 12px;
 }
 
 @media (max-width: 1200px) {
