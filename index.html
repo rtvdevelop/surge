@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="imdb-wrapper">
+<body class="imdb-wrapper bg-whitesmoke">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- begin : nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-whitesmoke">
             <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="90"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- begin: navbar items -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
@@ -48,7 +50,7 @@
                 </ul>
 
                 <div class="input-group search-bar mr-auto transit-with-ease">
-                    <input type="text" class="form-control  bg-light-grey" placeholder=""
+                    <input type="text" class="form-control  bg-light-grey" placeholder="Find Movies"
                         aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <div class="input-group-append bg-light-grey">
                         <button class="btn btn-outline-secondary dropdown-toggle bord-0" type="button"
@@ -83,10 +85,14 @@
 
                 </ul>
             </div>
+            <!-- begin: navbar items -->
+
         </nav>
+        <!-- end : nav bar -->
     </header>
     <main>
-        <div class="bd-example container-fluid">
+        <!-- begin: carousel -->
+        <div class="carousel-wrapper">
             <div id="carouselExampleCaptions" class="imdb carousel row" data-ride="carousel">
                 <div class="carousel-inner transit-with-ease">
                     <div class="carousel-item active slide-1">
@@ -117,6 +123,7 @@
                                         </div>
                                         <div class="meta flex column">
                                             <div class="user-rating">
+                                                <span>Your rating : </span>
                                                 <div class="rating-wrapper"></div>
                                                 <span class="rating-recorded">
                                                     <span id="rated-value"></span> / <span id="max-value"></span>
@@ -262,6 +269,19 @@
                 </a>
             </div>
         </div>
+        <!-- end: carousel -->
+        <section class="movies-wrapper flex column">
+            <header>
+                <h5>NOW PLAYING</h5> BOX OFFICE
+            </header>
+            <div class="flex h-align-space-between wrap">
+                <div class="card bg-white mt-2 mb-2"></div>
+                <div class="card bg-white mt-2 mb-2"></div>
+                <div class="card bg-white mt-2 mb-2"></div>
+                <div class="card bg-white mt-2 mb-2"></div>
+                <div class="card bg-white mt-2 mb-2"></div>
+            </div>
+        </section>
     </main>
 
     <script src="https://use.fontawesome.com/e410ea1610.js"></script>

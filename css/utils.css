@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
 .flex.column.v-align-space-even {
   justify-content: space-evenly;
 }
@@ -16,6 +20,9 @@
 
 .flex.h-align-space-between {
   justify-content: space-between;
+}
+.flex.h-align-center {
+  justify-content: center;
 }
 
 .flex.h-align-space-around {
@@ -39,6 +46,10 @@
 .bg-white {
   background-color: white;
   color: black;
+}
+
+.bg-whitesmoke {
+  background-color: #e6e6e6;
 }
 
 .bg-light-grey {
