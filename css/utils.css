@@ -87,8 +87,6 @@
   color: #f7ab06;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
+.d-sm-block.flex {
+  display: none !important;
 }

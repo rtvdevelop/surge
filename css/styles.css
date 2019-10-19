@@ -107,6 +107,9 @@ main {
 .imdb .carousel-caption .pie {
   width: 100px;
 }
+.imdb .carousel-caption .thumb-nail img {
+  width: 115px;
+}
 .imdb .pie .percentage {
   font-size: 12px;
   font-weight: bold;
@@ -151,7 +154,16 @@ main {
 }
 
 @media (max-width: 576px) {
+  .pie-meta.flex {
+    flex-direction: column;
+  }
+  .imdb .carousel-inner {
+    height: 450px;
+  }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 468px) {
+  .imdb.carousel {
+    font-size: 14px;
+  }
 }

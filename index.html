@@ -90,51 +90,64 @@
             <div id="carouselExampleCaptions" class="imdb carousel row" data-ride="carousel">
                 <div class="carousel-inner transit-with-ease">
                     <div class="carousel-item active slide-1">
-                        <div class="carousel-caption d-none d-md-block flex h-align-space-between">
+                        <div class="carousel-caption flex h-align-space-between">
                             <div class="desc">
-                                <h5 class="title mt-4 mb-0">
+                                <h5 class="title mt-2 mb-0">
                                     BAAHUBALI - THE CONCLUSION
                                     <span class="year text-yellow">( 2014 )</span>
                                 </h5>
                                 <section class="info">
                                     some meta data
                                 </section>
-                                <section class="rating-visuals flex h-align-space-between mt-4">
-                                    <div class="pie pull-left">
-                                        <svg viewBox="0 0 36 36" class="circular-chart orange">
-                                            <path class="circle-bg" d="M18 2.0845
-                                                            a 15.9155 15.9155 0 0 1 0 31.831
-                                                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                                            <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
-                                                            a 15.9155 15.9155 0 0 1 0 31.831
-                                                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-                                            <text x="14" y="23" class="percentage">9</text>
-                                        </svg>
+                                <section class="rating-visuals flex h-align-space-between mt-2">
+                                    <div class="thumb-nail d-block d-sm-none">
+                                        <img src="./assets/slide1_tile.jpg" alt="">
                                     </div>
-                                    <div class="meta ">
-                                        <div class="user-rating">
-                                            <div class="rating-wrapper"></div>
-                                            <span class="rating-recorded">
-                                                <span id="rated-value"></span> / <span id="max-value"></span>
-                                            </span>
+                                    <div class="pie-meta flex">
+                                        <div class="pie">
+                                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                                <path class="circle-bg" d="M18 2.0845
+                                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+                                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                                            a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                <text x="14" y="23" class="percentage">9</text>
+                                            </svg>
                                         </div>
-                                        <div class="ratings">
-                                            given ratings
-                                        </div>
-                                        <div class="reviews">
-                                            given reviews
+                                        <div class="meta ">
+                                            <div class="user-rating">
+                                                <div class="rating-wrapper"></div>
+                                                <span class="rating-recorded">
+                                                    <span id="rated-value"></span> / <span id="max-value"></span>
+                                                </span>
+                                            </div>
+                                            <div class="ratings d-none d-sm-block">
+                                                given ratings
+                                            </div>
+                                            <div class="reviews d-none d-sm-block">
+                                                given reviews
+                                            </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section class="summary mt-4">
+                                <section class="  d-block d-sm-none mt-1">
+                                    <div class="ratings">
+                                        given ratings
+                                    </div>
+                                    <div class="reviews">
+                                        given reviews
+                                    </div>
+                                </section>
+                                <section class="summary mt-2">
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </section>
-                                <section class="movie-info mt-4">
+                                <section class="movie-info mt-2">
                                     <span class="director">Director</span>
                                     <span class="writers">Writer</span>
                                     <span class="stars">Star</span>
                                 </section>
-                                <section class="controls mt-4">
+                                <section class="controls mt-2">
 
                                     <div class="btn-group">
                                         <button class="bg-yellow btn">
@@ -159,7 +172,7 @@
                                         Watch trailer</button>
                                 </section>
                             </div>
-                            <div class="tile">
+                            <div class="tile d-none d-sm-block">
                                 <img src="./assets/slide1_tile.jpg" alt="">
                             </div>
                         </div>
