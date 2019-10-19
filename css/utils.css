@@ -99,10 +99,12 @@
   stroke: #ff9f00;
 }
 
-.fa.fa-star {
+.fa.fa-star,
+#max-value {
+  color: #b0b0b0;
 }
 
-.checked {
+.fa.fa-star.checked {
   color: #f7ab06;
 }
 

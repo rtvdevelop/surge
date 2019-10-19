@@ -47,7 +47,7 @@ main {
   bottom: 0;
   left: 0;
   text-align: initial;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
 .imdb .carousel-item {
@@ -142,6 +142,10 @@ main {
   width: 220px;
 }
 
+.imdb-wrapper .card img {
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   .imdb-wrapper .search-bar {
     max-width: 300px;
@@ -177,6 +181,7 @@ main {
   }
   .imdb-wrapper .movies-wrapper .card {
     width: 100%;
+    height: auto;
   }
 }
 
