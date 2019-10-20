@@ -66,6 +66,10 @@ main {
 .imdb .carousel-control-next {
   right: 8%;
 }
+.imdb .carousel-control-next,
+.imdb .carousel-control-prev {
+  z-index: 9999;
+}
 
 .slide-1 {
   background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.52), rgb(37, 38, 37)),
@@ -86,6 +90,7 @@ main {
 }
 
 .imdb .carousel-caption .year {
+  font-size: 14px;
 }
 
 .imdb .carousel-caption .info {
@@ -172,11 +177,18 @@ main {
     width: 100%;
   }
   .imdb .carousel-control-prev {
-    left: 0;
+    left: 10px;
   }
 
   .imdb .carousel-control-next {
-    right: 0;
+    right: 10px;
+  }
+  .imdb .carousel-control-prev,
+  .imdb .carousel-control-next {
+    width: 35px;
+  }
+  .imdb .carousel-caption {
+    padding: 20px 50px;
   }
 }
 
@@ -190,6 +202,9 @@ main {
   .imdb-wrapper .movies-wrapper .card {
     width: 100%;
     height: auto;
+  }
+  .imdb .carousel-caption {
+    padding: 20px 40px;
   }
 }
 
