@@ -48,6 +48,7 @@ main {
   left: 0;
   text-align: initial;
   padding: 20px 30px;
+  align-items: center;
 }
 
 .imdb .carousel-item {
@@ -55,8 +56,13 @@ main {
   height: 100%;
 }
 
+.imdb .tile {
+  width: 300px;
+  margin-left: 10px;
+}
+
 .imdb .tile img {
-  width: 250px;
+  width: 100%;
 }
 
 .imdb .carousel-control-prev {
@@ -94,6 +100,14 @@ main {
 }
 
 .imdb .carousel-caption .info {
+  font-size: 10px;
+}
+.imdb .carousel-caption .pie-meta {
+  font-size: 14px;
+  align-items: center;
+}
+.imdb .carousel-caption .summary {
+  font-size: 14px;
 }
 
 .imdb .carousel-caption .rating-visuals {
@@ -107,7 +121,7 @@ main {
   padding: 3px;
 }
 
-.imdb .carousel-caption #rated-value {
+.imdb .carousel-caption .rated-value {
   width: 15px;
   display: inline-block;
 }
@@ -127,7 +141,8 @@ main {
   margin-left: 10px;
   justify-content: center;
 }
-.imdb .carousel-caption .summary {
+.imdb .carousel-caption .movie-info {
+  font-size: 10px;
 }
 .imdb .carousel-caption .controls .btn {
   text-transform: uppercase;
@@ -160,11 +175,17 @@ main {
 }
 
 @media (max-width: 1200px) {
+  .imdb .tile {
+    width: 450px;
+  }
   .imdb-wrapper .search-bar {
     max-width: 300px;
   }
 }
 @media (max-width: 991px) {
+  .imdb .tile {
+    width: 500px;
+  }
   .imdb-wrapper .search-bar {
     max-width: none;
   }
@@ -193,6 +214,9 @@ main {
 }
 
 @media (max-width: 576px) {
+  .imdb .carousel-caption .pie-meta {
+    font-size: 10px;
+  }
   .pie-meta.flex {
     flex-direction: column;
   }
@@ -209,7 +233,22 @@ main {
 }
 
 @media (max-width: 468px) {
-  .imdb.carousel {
+  .imdb .mb-2 {
+    margin-bottom: 2px !important;
+  }
+  .imdb .carousel-caption .rating-visuals {
+    align-items: center;
+  }
+  .imdb .carousel-caption .year {
+    font-size: 12px;
+  }
+  .imdb .carousel-caption .title {
     font-size: 14px;
+  }
+  .imdb .carousel-caption .controls {
+    margin-top: 5px;
+  }
+  .imdb.carousel {
+    font-size: 12px;
   }
 }

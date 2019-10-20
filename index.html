@@ -95,17 +95,19 @@
         <div class="carousel-wrapper">
             <div id="carouselExampleCaptions" class="imdb carousel row" data-ride="carousel">
                 <div class="carousel-inner transit-with-ease">
-                    <div class="carousel-item active slide-1">
+                    <div class="carousel-item  active slide-1">
                         <div class="carousel-caption flex h-align-space-between">
                             <div class="desc flex column v-align-space-even">
-                                <h5 class="title mb-0">
+                                <h5 class="title mb-0 mb-2">
                                     BAAHUBALI - THE CONCLUSION
                                     <span class="year text-yellow">( 2014 )</span>
+                                    <section class="info">
+                                        <span class="dot-space">R</span>
+                                        <span class="dot-space">120 min</span>
+                                        <span class="dot-space">Action, Adventure</span>
+                                    </section>
                                 </h5>
-                                <section class="info">
-                                    some meta data
-                                </section>
-                                <section class="rating-visuals flex h-align-space-between">
+                                <section class="rating-visuals flex mb-2">
                                     <div class="thumb-nail d-block d-sm-none">
                                         <img src="./assets/slide1_tile.jpg" alt="">
                                     </div>
@@ -126,33 +128,121 @@
                                                 <span>Your rating : </span>
                                                 <div class="rating-wrapper"></div>
                                                 <span class="rating-recorded">
-                                                    <span id="rated-value"></span> / <span id="max-value"></span>
+                                                    <span class="rated-value"></span> / <span class="max-value"></span>
                                                 </span>
                                             </div>
-                                            <div class="ratings d-none d-sm-block">
-                                                given ratings
+                                            <div class="ratings ">
+                                                Ratings: 9/10 from 10000 users Metascore: 90/100
                                             </div>
-                                            <div class="reviews d-none d-sm-block">
-                                                given reviews
+                                            <div class="reviews ">
+                                                Reviews: 900 <span></span> user
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section class="  d-block d-sm-none ">
-                                    <div class="ratings">
-                                        given ratings
+                                <section class="summary mb-2">
+                                    <span style="font-weight: bold;">Summary</span>
+                                    <p class="m-0">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                                        and publishing industries for previewing layouts and visual mockups..
+                                    </p>
+                                </section>
+                                <section class="movie-info mb-2">
+                                    <span class="director">Director : <span class="text-yellow dot-space">SS
+                                            Rajamouli</span></span>
+                                    <span class="writers">Writer : <span class="text-yellow dot-space">SS
+                                            Prasad</span></span>
+                                    <span class="stars">Stars :
+                                        <img class="star-thumbnail bord-circle" src="./assets/prabhas.jpg" alt="">
+                                        <img class="star-thumbnail bord-circle" src="./assets/rana.jpeg" alt="">
+                                        <img class="star-thumbnail bord-circle" src="./assets/anushka.jpg" alt="">
+                                    </span>
+                                </section>
+                                <section class="controls ">
+
+                                    <div class="btn-group">
+                                        <button class="bg-yellow btn">
+                                            <i class="fa fa-plus pr-2" aria-hidden="true"></i>
+                                            Watch List
+                                        </button>
+                                        <button type="button"
+                                            class="btn dropdown-toggle dropdown-toggle-split bg-yellow"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
                                     </div>
-                                    <div class="reviews">
-                                        given reviews
+                                    <button class="btn btn-default bg-white">
+                                        <i class="fa fa-play pr-2" aria-hidden="true"></i>
+                                        Watch trailer</button>
+                                </section>
+                            </div>
+                            <div class="tile d-none d-sm-block transit-with-ease">
+                                <img src="./assets/slide1_tile.jpg" class="transit-with-ease" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  slide-2">
+                        <div class="carousel-caption flex h-align-space-between">
+                            <div class="desc flex column v-align-space-even">
+                                <h5 class="title mb-0 mb-2">
+                                    SYERAA
+                                    <span class="year text-yellow">( 2019 )</span>
+                                    <section class="info">
+                                        <span class="dot-space">R</span>
+                                        <span class="dot-space">120 min</span>
+                                        <span class="dot-space">Action, Adventure</span>
+                                    </section>
+                                </h5>
+                                <section class="rating-visuals flex mb-2">
+                                    <div class="thumb-nail d-block d-sm-none">
+                                        <img src="./assets/slide2_tile.jpg" alt="">
+                                    </div>
+                                    <div class="pie-meta flex">
+                                        <div class="pie">
+                                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                                <path class="circle-bg" d="M18 2.0845
+                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                </path>
+                                                <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                                                                                a 15.9155 15.9155 0 0 1 0 31.831
+                                                                                a 15.9155 15.9155 0 0 1 0 -31.831">
+                                                </path>
+                                                <text x="14" y="23" class="percentage">9</text>
+                                            </svg>
+                                        </div>
+                                        <div class="meta flex column">
+                                            <div class="user-rating">
+                                                <span>Your rating : </span>
+                                                <div class="rating-wrapper"></div>
+                                                <span class="rating-recorded">
+                                                    <span id="rated-value"></span> / <span id="max-value"></span>
+                                                </span>
+                                            </div>
+                                            <div class="ratings ">
+                                                Ratings: 9/10 from 10000 users Metascore: 90/100
+                                            </div>
+                                            <div class="reviews ">
+                                                Reviews: 900 <span></span> user
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
-                                <section class="summary ">
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <section class="summary mb-2">
+                                    <span style="font-weight: bold;">Summary</span>
+                                    <p class="m-0">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                                        and publishing industries for previewing layouts and visual mockups..
+                                    </p>
                                 </section>
-                                <section class="movie-info ">
-                                    <span class="director">Director</span>
-                                    <span class="writers">Writer</span>
-                                    <span class="stars">Star</span>
+                                <section class="movie-info mb-2">
+                                    <span class="director">Director : <span class="text-yellow dot-space">SS
+                                            Surender Reddy</span></span>
+                                    <span class="writers">Writer : <span class="text-yellow dot-space">SS
+                                            Venkateswara rao</span></span>
+                                    <span class="stars">Stars :
+                                        <img class="star-thumbnail bord-circle" src="./assets/chiranjeevi.jpg" alt="">
+                                        <img class="star-thumbnail bord-circle" src="./assets/tamanna.jpg" alt="">
+                                        <img class="star-thumbnail bord-circle" src="./assets/nayan.jpg" alt="">
+                                    </span>
                                 </section>
                                 <section class="controls ">
 
@@ -167,95 +257,21 @@
                                             <span class="sr-only">Toggle Dropdown</span>
                                         </button>
                                         <!-- <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action1</a>
-                                            <a class="dropdown-item" href="#">Action2</a>
-                                            <a class="dropdown-item" href="#">Action3</a>
-                                        </div> -->
+                                                <a class="dropdown-item" href="#">Action1</a>
+                                                <a class="dropdown-item" href="#">Action2</a>
+                                                <a class="dropdown-item" href="#">Action3</a>
+                                            </div> -->
                                     </div>
                                     <button class="btn btn-default bg-white">
                                         <i class="fa fa-play pr-2" aria-hidden="true"></i>
                                         Watch trailer</button>
                                 </section>
                             </div>
-                            <div class="tile d-none d-sm-block">
-                                <img src="./assets/slide1_tile.jpg" alt="">
+                            <div class="tile d-none d-sm-block transit-with-ease">
+                                <img src="./assets/slide2_tile.jpg" class="transit-with-ease" alt="">
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="carousel-item slide-2">
-                        <div class="carousel-caption d-none d-md-block flex h-align-space-between">
-                            <div class="desc">
-                                <h5 class="title mt-4 mb-0">
-                                    BAAHUBALI - THE CONCLUSION
-                                    <span class="year text-yellow">( 2014 )</span>
-                                </h5>
-                                <section class="info">
-                                    some meta data
-                                </section>
-                                <section class="rating-visuals flex h-align-space-between mt-4">
-                                    <div class="pie flex-g-1">
-                                        chart
-                                    </div>
-                                    <div class="meta flex-g-1">
-                                        <div class="user-rating">
-                                            <div class="rating-wrapper"></div>
-                                            <span class="rating-recorded">
-                                                <span id="rated-value"></span> / <span id="max-value"></span>
-                                            </span>
-                                        </div>
-                                        <div class="ratings">
-                                            given ratings
-                                        </div>
-                                        <div class="reviews">
-                                            given reviews
-                                        </div>
-                                    </div>
-                                </section>
-                                <section class="summary mt-4">
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </section>
-                                <section class="movie-info mt-4">
-                                    <span class="director">Director</span>
-                                    <span class="writers">Writer</span>
-                                    <span class="stars">Star</span>
-                                </section>
-                                <section class="controls mt-4">
-
-                                    <div class="btn-group">
-                                        <button class="bg-yellow btn">
-                                            <i class="fa fa-plus pr-2" aria-hidden="true"></i>
-                                            Watch List
-                                        </button>
-                                        <button type="button"
-                                            class="btn dropdown-toggle dropdown-toggle-split bg-yellow"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-default bg-white">
-                                        <i class="fa fa-play pr-2" aria-hidden="true"></i>
-                                        Watch trailer</button>
-                                </section>
-                            </div>
-                            <div class="tile">
-                                <img src="./assets/slide2_tile.jpg" alt="">
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="carousel-item slide-3">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block flex h-align-space-between">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </div>
-                    </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

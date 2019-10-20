@@ -33,6 +33,15 @@
   border: 0;
 }
 
+.bord-circle {
+  border-radius: 50%;
+}
+
+.star-thumbnail {
+  width: 30px;
+  height: 30px;
+}
+
 .transit-with-ease {
   transition: all 1s ease;
 }
@@ -100,7 +109,7 @@
 }
 
 .fa.fa-star,
-#max-value {
+.max-value {
   color: #b0b0b0;
 }
 
@@ -110,4 +119,15 @@
 
 .d-sm-block.flex {
   display: none !important;
+}
+
+.dot-space:after {
+  content: ".";
+  color: white;
+  padding: 1px 3px;
+  font-weight: bold;
+}
+
+.imdb-wrapper .fa.fa-2x {
+  font-size: 1.2rem !important;
 }
